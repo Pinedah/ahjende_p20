@@ -499,6 +499,60 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			}
 		break;
 
+		case 'obtener_colores':
+			$id_cit = escape($_POST['id_cit'], $connection);
+			
+			if (!$id_cit) {
+				echo respuestaError('ID de cita no proporcionado');
+				break;
+			}
+			
+			$colores = obtenerColoresCita($id_cit, $connection);
+			
+			if($colores !== false) {
+				echo respuestaExito($colores, 'Colores obtenidos correctamente');
+			} else {
+				echo respuestaError('Error al obtener colores: ' . mysqli_error($connection));
+			}
+		break;
+
+		case 'guardar_color':
+			$id_cit = escape($_POST['id_cit'], $connection);
+			$fila = escape($_POST['fila'], $connection);
+			$columna = escape($_POST['columna'], $connection);
+			$color_fondo = escape($_POST['color_fondo'], $connection);
+			$color_texto = isset($_POST['color_texto']) ? escape($_POST['color_texto'], $connection) : '#000000';
+			$id_ejecutivo = escape($_POST['id_ejecutivo'], $connection);
+			
+			if (!$id_cit || !$fila || !$columna || !$color_fondo || !$id_ejecutivo) {
+				echo respuestaError('Datos incompletos para guardar color');
+				break;
+			}
+			
+			$id_color = guardarColor($id_cit, $fila, $columna, $color_fondo, $color_texto, $id_ejecutivo, $connection);
+			
+			if($id_color !== false) {
+				echo respuestaExito(['id_color' => $id_color], 'Color guardado correctamente');
+			} else {
+				echo respuestaError('Error al guardar color: ' . mysqli_error($connection));
+			}
+		break;
+
+		case 'eliminar_color':
+			$id_color = escape($_POST['id_color'], $connection);
+			
+			if (!$id_color) {
+				echo respuestaError('ID de color no proporcionado');
+				break;
+			}
+			
+			if(eliminarColor($id_color, $connection)) {
+				echo respuestaExito(null, 'Color eliminado correctamente');
+			} else {
+				echo respuestaError('Error al eliminar color: ' . mysqli_error($connection));
+			}
+		break;
+
 		default:
 			echo respuestaError('Acción no válida');
 		break;
@@ -685,6 +739,60 @@ function guardarComentario($id_cit, $fila, $columna, $contenido, $id_ejecutivo, 
 // Función para eliminar comentario
 function eliminarComentario($id_com, $connection) {
 	$query = "UPDATE comentarios_cita SET eli_com = 0 WHERE id_com = '$id_com'";
+	return mysqli_query($connection, $query);
+}
+
+// =====================================
+// FUNCIONES PARA COLORES DE CELDAS
+// =====================================
+
+// Función para obtener colores de una cita
+function obtenerColoresCita($id_cit, $connection) {
+	$query = "SELECT cc.*, e.nom_eje 
+			 FROM colores_celda cc 
+			 LEFT JOIN ejecutivo e ON cc.id_eje_color = e.id_eje 
+			 WHERE cc.id_cit = '$id_cit' AND cc.activo = 1 
+			 ORDER BY cc.fecha_color ASC";
+	
+	return ejecutarConsulta($query, $connection);
+}
+
+// Función para crear/actualizar color de celda
+function guardarColor($id_cit, $fila, $columna, $color_fondo, $color_texto, $id_ejecutivo, $connection) {
+	// Verificar si ya existe un color para esta celda
+	$queryExistente = "SELECT id_color FROM colores_celda 
+					   WHERE id_cit = '$id_cit' AND fila_color = '$fila' AND columna_color = '$columna' AND activo = 1";
+	$existente = ejecutarConsulta($queryExistente, $connection);
+	
+	if ($existente && count($existente) > 0) {
+		// Actualizar color existente
+		$id_color = $existente[0]['id_color'];
+		$query = "UPDATE colores_celda 
+				 SET color_fondo = '$color_fondo', color_texto = '$color_texto', 
+				 	 id_eje_color = '$id_ejecutivo', fecha_modificacion = CURRENT_TIMESTAMP 
+				 WHERE id_color = '$id_color'";
+		
+		if (mysqli_query($connection, $query)) {
+			return $id_color;
+		} else {
+			return false;
+		}
+	} else {
+		// Crear nuevo color
+		$query = "INSERT INTO colores_celda (id_cit, fila_color, columna_color, color_fondo, color_texto, id_eje_color) 
+				 VALUES ('$id_cit', '$fila', '$columna', '$color_fondo', '$color_texto', '$id_ejecutivo')";
+		
+		if (mysqli_query($connection, $query)) {
+			return mysqli_insert_id($connection);
+		} else {
+			return false;
+		}
+	}
+}
+
+// Función para eliminar color de celda
+function eliminarColor($id_color, $connection) {
+	$query = "UPDATE colores_celda SET activo = 0 WHERE id_color = '$id_color'";
 	return mysqli_query($connection, $query);
 }
 ?>

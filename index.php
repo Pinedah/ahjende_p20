@@ -223,6 +223,60 @@
             background-color: #ffeb3b !important;
             transition: background-color 0.3s ease;
         }
+        
+        /* Estilos para colores de celdas */
+        .celda-coloreada {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .color-websocket-changed {
+            animation: colorChanged 1s ease-in-out;
+        }
+        
+        @keyframes colorChanged {
+            0% { 
+                transform: scale(1); 
+                box-shadow: 0 0 0 0 rgba(255, 235, 59, 0.7);
+            }
+            50% { 
+                transform: scale(1.05); 
+                box-shadow: 0 0 0 10px rgba(255, 235, 59, 0.3);
+            }
+            100% { 
+                transform: scale(1); 
+                box-shadow: 0 0 0 0 rgba(255, 235, 59, 0);
+            }
+        }
+        
+        .color-preset {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .color-preset:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .color-preset:active {
+            transform: scale(0.95);
+        }
+        
+        /* Estilos para el modal de colores */
+        #modalColorCelda .form-control[type="color"] {
+            height: 40px;
+            border-radius: 5px;
+        }
+        
+        #modalColorCelda .color-preset {
+            text-align: center;
+            font-size: 0.9em;
+            border: 2px solid transparent;
+        }
+        
+        #modalColorCelda .color-preset.selected {
+            border-color: #007bff;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -494,6 +548,66 @@
         </div>
     </div>
 
+    <!-- Modal para cambiar color de celda -->
+    <div class="modal fade" id="modalColorCelda" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cambiar Color de Celda</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="celdaColor">Celda seleccionada:</label>
+                        <div id="celdaColor" class="alert alert-info"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="colorFondo">Color de fondo:</label>
+                        <input type="color" class="form-control" id="colorFondo" value="#ffffff">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="colorTexto">Color de texto:</label>
+                        <input type="color" class="form-control" id="colorTexto" value="#000000">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Colores predefinidos:</label>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="color-preset" style="background-color: #ffeb3b; color: #000000; padding: 10px; margin: 5px; cursor: pointer; border-radius: 3px;" data-fondo="#ffeb3b" data-texto="#000000">
+                                    <i class="fas fa-star"></i> Importante
+                                </div>
+                                <div class="color-preset" style="background-color: #4caf50; color: #ffffff; padding: 10px; margin: 5px; cursor: pointer; border-radius: 3px;" data-fondo="#4caf50" data-texto="#ffffff">
+                                    <i class="fas fa-check"></i> Completado
+                                </div>
+                                <div class="color-preset" style="background-color: #f44336; color: #ffffff; padding: 10px; margin: 5px; cursor: pointer; border-radius: 3px;" data-fondo="#f44336" data-texto="#ffffff">
+                                    <i class="fas fa-exclamation"></i> Urgente
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="color-preset" style="background-color: #2196f3; color: #ffffff; padding: 10px; margin: 5px; cursor: pointer; border-radius: 3px;" data-fondo="#2196f3" data-texto="#ffffff">
+                                    <i class="fas fa-info"></i> Información
+                                </div>
+                                <div class="color-preset" style="background-color: #ff9800; color: #ffffff; padding: 10px; margin: 5px; cursor: pointer; border-radius: 3px;" data-fondo="#ff9800" data-texto="#ffffff">
+                                    <i class="fas fa-clock"></i> Pendiente
+                                </div>
+                                <div class="color-preset" style="background-color: #9c27b0; color: #ffffff; padding: 10px; margin: 5px; cursor: pointer; border-radius: 3px;" data-fondo="#9c27b0" data-texto="#ffffff">
+                                    <i class="fas fa-bookmark"></i> Especial
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="guardarColor()">Guardar Color</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         // =====================================
         // CONFIGURACIÓN DE COLUMNAS
@@ -518,11 +632,51 @@
         var reconectarIntento = 0;
         var maxReconectarIntentos = 5;
         
+        // Variables para colores de celdas
+        var coloresCeldas = {}; // Almacenar colores por fila,columna {"fila,columna": {fondo: "#color", texto: "#color"}}
+        var colorSeleccionado = null; // Color seleccionado para cambiar
+        
+        // Función para cargar colores desde localStorage
+        function cargarColoresDesdeCache() {
+            try {
+                var coloresCache = localStorage.getItem('coloresCeldas_' + window.location.pathname);
+                if (coloresCache) {
+                    coloresCeldas = JSON.parse(coloresCache);
+                    console.log('📱 Colores cargados desde cache:', Object.keys(coloresCeldas).length);
+                }
+            } catch (e) {
+                console.error('❌ Error al cargar colores desde cache:', e);
+            }
+        }
+        
+        // Función para guardar colores en localStorage
+        function guardarColoresEnCache() {
+            try {
+                localStorage.setItem('coloresCeldas_' + window.location.pathname, JSON.stringify(coloresCeldas));
+            } catch (e) {
+                console.error('❌ Error al guardar colores en cache:', e);
+            }
+        }
+        
+        // Función para limpiar cache de colores
+        function limpiarCacheColores() {
+            try {
+                localStorage.removeItem('coloresCeldas_' + window.location.pathname);
+                coloresCeldas = {};
+                console.log('🗑️ Cache de colores limpiado');
+            } catch (e) {
+                console.error('❌ Error al limpiar cache de colores:', e);
+            }
+        }
+        
         // =====================================
         // INICIALIZACIÓN
         // =====================================
         
         $(document).ready(function() {
+            // Cargar colores desde cache al iniciar
+            cargarColoresDesdeCache();
+            
             // Configurar fechas por defecto (última semana)
             var fechaHoy = new Date();
             var fechaFin = fechaHoy.toISOString().split('T')[0];
@@ -555,6 +709,14 @@
                 cargarCitas();
                 // Aplicar filtros desde URL después de cargar todo
                 aplicarFiltrosDesdeURL();
+                
+                // Aplicar colores del cache inmediatamente después de cargar la tabla
+                setTimeout(function() {
+                    if (Object.keys(coloresCeldas).length > 0) {
+                        console.log('🎨 Aplicando colores del cache al inicializar...');
+                        hot.render();
+                    }
+                }, 500);
             }).catch(function(error) {
                 console.error('Error en inicialización:', error);
                 alert('Error al inicializar la aplicación: ' + error);
@@ -621,8 +783,8 @@
                     procesarEliminacionWebSocket(mensaje);
                 } else if (mensaje.tipo === 'comentario_agregado') {
                     procesarComentarioWebSocket(mensaje);
-                } else if (mensaje.tipo === 'comentario_agregado') {
-                    procesarComentarioWebSocket(mensaje);
+                } else if (mensaje.tipo === 'color_cambiado' || mensaje.tipo === 'color_eliminado') {
+                    procesarColorWebSocket(mensaje);
                 }
             };
             
@@ -1041,6 +1203,41 @@
                             }
                         },
                         'sep3': '---------',
+                        'cambiar_color': {
+                            name: 'Cambiar color de celda',
+                            callback: function(key, selection, clickEvent) {
+                                cambiarColorCelda(selection);
+                            },
+                            disabled: function() {
+                                // Habilitar solo si hay una cita en la fila seleccionada
+                                var selected = hot.getSelected();
+                                if (selected && selected.length > 0) {
+                                    var row = selected[0][0];
+                                    var data = hot.getDataAtRow(row);
+                                    var idCitIndex = obtenerIndiceColumna('id_cit');
+                                    return !data || !data[idCitIndex] || data[idCitIndex] === '';
+                                }
+                                return true;
+                            }
+                        },
+                        'quitar_color': {
+                            name: 'Quitar color de celda',
+                            callback: function(key, selection, clickEvent) {
+                                quitarColorCelda(selection);
+                            },
+                            disabled: function() {
+                                // Habilitar solo si hay una cita en la fila seleccionada
+                                var selected = hot.getSelected();
+                                if (selected && selected.length > 0) {
+                                    var row = selected[0][0];
+                                    var data = hot.getDataAtRow(row);
+                                    var idCitIndex = obtenerIndiceColumna('id_cit');
+                                    return !data || !data[idCitIndex] || data[idCitIndex] === '';
+                                }
+                                return true;
+                            }
+                        },
+                        'sep4': '---------',
                         'undo': {
                             name: 'Deshacer'
                         },
@@ -1139,6 +1336,19 @@
                         }
                     }
                     
+                    // Aplicar colores personalizados
+                    var claveCelda = row + ',' + col;
+                    if (coloresCeldas[claveCelda]) {
+                        TD.style.backgroundColor = coloresCeldas[claveCelda].fondo;
+                        TD.style.color = coloresCeldas[claveCelda].texto;
+                        TD.classList.add('celda-coloreada');
+                    } else {
+                        // Limpiar estilos si no hay color personalizado
+                        TD.style.backgroundColor = '';
+                        TD.style.color = '';
+                        TD.classList.remove('celda-coloreada');
+                    }
+                    
                     // Estilo para filas de grupo horario
                     var esInicioGrupo = row % citasPorRango === 0;
                     if (esInicioGrupo && col === 0) {
@@ -1149,8 +1359,11 @@
                     // Resaltar celdas vacías reservadas
                     var posicionEnGrupo = row % citasPorRango;
                     if (posicionEnGrupo >= 2 && !value && col > 0) {
-                        TD.style.backgroundColor = '#ffffff';
-                        TD.style.border = '1px dashed #cccccc';
+                        // Solo aplicar si no hay color personalizado
+                        if (!coloresCeldas[claveCelda]) {
+                            TD.style.backgroundColor = '#ffffff';
+                            TD.style.border = '1px dashed #cccccc';
+                        }
                     }
                 }
             });
@@ -1823,6 +2036,11 @@
             }
             
             hot.loadData(datos);
+            
+            // Cargar colores después de cargar los datos - timeout más largo para asegurar renderizado completo
+            setTimeout(function() {
+                cargarColoresCeldas();
+            }, 300);
         }
         
         function mapearCitaAFila(cita, horario) {
@@ -2476,6 +2694,422 @@
             
             // Mostrar badge
             mostrarBadgeWebSocket('info', 'Comentario agregado por otro usuario');
+        }
+        
+        // =====================================
+        // FUNCIONES DE COLORES DE CELDAS
+        // =====================================
+        
+        var colorSeleccionado = null;
+        
+        function cambiarColorCelda(selection) {
+            console.log('=== CAMBIAR COLOR CELDA ===');
+            console.log('Selection recibida:', selection);
+            
+            // Obtener la selección actual de Handsontable
+            var selected = hot.getSelected();
+            console.log('Selección actual:', selected);
+            
+            if (!selected || selected.length === 0) {
+                alert('Por favor selecciona una celda para cambiar su color.');
+                return;
+            }
+            
+            var row = selected[0][0];
+            var col = selected[0][1];
+            var data = hot.getDataAtRow(row);
+            var idCitIndex = obtenerIndiceColumna('id_cit');
+            
+            console.log('Row:', row, 'Col:', col, 'Data:', data, 'ID Index:', idCitIndex);
+            
+            // Verificar si la columna id_cit existe
+            if (idCitIndex === -1) {
+                alert('Error: No se pudo encontrar la columna id_cit en la configuración de la tabla.');
+                console.error('columnasConfig no contiene id_cit:', columnasConfig);
+                return;
+            }
+            
+            // Verificar si hay datos en la fila
+            if (!data || data.length === 0) {
+                alert('Error: No hay datos en la fila seleccionada.');
+                console.error('Datos de fila vacíos:', data);
+                return;
+            }
+            
+            // Verificar si hay un ID de cita válido
+            var idCit = data[idCitIndex];
+            console.log('ID Cita extraído:', idCit, 'Tipo:', typeof idCit);
+            
+            if (!idCit || idCit === '' || idCit === null || idCit === undefined) {
+                alert('Esta fila no contiene una cita válida. Por favor selecciona una fila que contenga datos de una cita.\n\nDebug: Fila ' + (row + 1) + ', ID index: ' + idCitIndex + ', Valor: ' + idCit);
+                console.error('ID de cita no válido:', {
+                    row: row,
+                    col: col,
+                    idCitIndex: idCitIndex,
+                    idCit: idCit,
+                    data: data,
+                    columnasConfig: columnasConfig
+                });
+                return;
+            }
+            
+            // Guardar información de la celda seleccionada
+            colorSeleccionado = {
+                id_cit: idCit,
+                fila: row,
+                columna: col,
+                columnaNombre: obtenerNombreColumna(col)
+            };
+            
+            console.log('Color seleccionado:', colorSeleccionado);
+            
+            // Obtener color actual de la celda
+            var celdaActual = hot.getCell(row, col);
+            var colorActual = {
+                fondo: '#ffffff',
+                texto: '#000000'
+            };
+            
+            if (celdaActual) {
+                var styles = window.getComputedStyle(celdaActual);
+                colorActual.fondo = rgbToHex(styles.backgroundColor) || '#ffffff';
+                colorActual.texto = rgbToHex(styles.color) || '#000000';
+            }
+            
+            // Actualizar información en el modal
+            $('#celdaColor').text(`Fila ${row + 1}, Columna: ${colorSeleccionado.columnaNombre}`);
+            $('#colorFondo').val(colorActual.fondo);
+            $('#colorTexto').val(colorActual.texto);
+            
+            // Configurar eventos para colores predefinidos
+            $('.color-preset').off('click').on('click', function() {
+                var fondo = $(this).data('fondo');
+                var texto = $(this).data('texto');
+                $('#colorFondo').val(fondo);
+                $('#colorTexto').val(texto);
+                
+                // Marcar como seleccionado
+                $('.color-preset').removeClass('selected');
+                $(this).addClass('selected');
+            });
+            
+            // Mostrar modal
+            $('#modalColorCelda').modal('show');
+            
+            console.log('=== FIN CAMBIAR COLOR CELDA ===');
+        }
+        
+        function quitarColorCelda(selection) {
+            console.log('=== QUITAR COLOR CELDA ===');
+            console.log('Selection recibida:', selection);
+            
+            // Obtener la selección actual de Handsontable
+            var selected = hot.getSelected();
+            console.log('Selección actual:', selected);
+            
+            if (!selected || selected.length === 0) {
+                alert('Por favor selecciona una celda para quitar su color.');
+                return;
+            }
+            
+            var row = selected[0][0];
+            var col = selected[0][1];
+            var data = hot.getDataAtRow(row);
+            var idCitIndex = obtenerIndiceColumna('id_cit');
+            
+            // Verificar si hay un ID de cita válido
+            var idCit = data[idCitIndex];
+            
+            if (!idCit || idCit === '' || idCit === null || idCit === undefined) {
+                alert('Esta fila no contiene una cita válida.');
+                return;
+            }
+            
+            // Confirmar eliminación
+            if (confirm('¿Está seguro de que desea quitar el color de esta celda?')) {
+                // Buscar y eliminar el color de la celda
+                $.ajax({
+                    url: 'server/controlador_citas.php',
+                    type: 'POST',
+                    data: {
+                        action: 'obtener_colores',
+                        id_cit: idCit
+                    },
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.success) {
+                            // Buscar el color de esta celda específica
+                            var colorCelda = response.data.find(function(color) {
+                                return color.fila_color == row && color.columna_color == col;
+                            });
+                            
+                            if (colorCelda) {
+                                // Eliminar el color
+                                $.ajax({
+                                    url: 'server/controlador_citas.php',
+                                    type: 'POST',
+                                    data: {
+                                        action: 'eliminar_color',
+                                        id_color: colorCelda.id_color
+                                    },
+                                    dataType: 'json',
+                                    success: function(response) {
+                                        if (response.success) {
+                                            // Quitar el color de la celda del almacenamiento
+                                            var claveCelda = row + ',' + col;
+                                            delete coloresCeldas[claveCelda];
+                                            
+                                            // Actualizar cache
+                                            guardarColoresEnCache();
+                                            
+                                            // Forzar re-renderizado de la celda
+                                            hot.render();
+                                            
+                                            // Enviar por WebSocket
+                                            enviarMensajeWebSocket('color_eliminado', {
+                                                id_cit: idCit,
+                                                fila: row,
+                                                columna: col,
+                                                id_ejecutivo: miIdEjecutivo
+                                            });
+                                            
+                                            mostrarBadgeWebSocket('success', 'Color eliminado correctamente');
+                                        } else {
+                                            alert('Error al eliminar color: ' + response.message);
+                                        }
+                                    },
+                                    error: function(xhr, status, error) {
+                                        alert('Error de conexión al eliminar color: ' + error);
+                                    }
+                                });
+                            } else {
+                                alert('No se encontró un color personalizado para esta celda.');
+                            }
+                        } else {
+                            alert('Error al obtener colores: ' + response.message);
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        alert('Error de conexión al obtener colores: ' + error);
+                    }
+                });
+            }
+            
+            console.log('=== FIN QUITAR COLOR CELDA ===');
+        }
+        
+        function guardarColor() {
+            if (!colorSeleccionado) {
+                alert('No hay celda seleccionada para colorear.');
+                return;
+            }
+            
+            var colorFondo = $('#colorFondo').val();
+            var colorTexto = $('#colorTexto').val();
+            
+            if (!colorFondo || !colorTexto) {
+                alert('Por favor selecciona ambos colores (fondo y texto).');
+                return;
+            }
+            
+            console.log('Guardando color:', {
+                celda: colorSeleccionado,
+                fondo: colorFondo,
+                texto: colorTexto
+            });
+            
+            $.ajax({
+                url: 'server/controlador_citas.php',
+                type: 'POST',
+                data: {
+                    action: 'guardar_color',
+                    id_cit: colorSeleccionado.id_cit,
+                    fila: colorSeleccionado.fila,
+                    columna: colorSeleccionado.columna,
+                    color_fondo: colorFondo,
+                    color_texto: colorTexto,
+                    id_ejecutivo: miIdEjecutivo
+                },
+                dataType: 'json',
+                success: function(response) {
+                    if (response.success) {
+                        // Aplicar el color a la celda
+                        aplicarColorCelda(colorSeleccionado.fila, colorSeleccionado.columna, colorFondo, colorTexto);
+                        
+                        // Enviar por WebSocket
+                        enviarMensajeWebSocket('color_cambiado', {
+                            id_cit: colorSeleccionado.id_cit,
+                            fila: colorSeleccionado.fila,
+                            columna: colorSeleccionado.columna,
+                            color_fondo: colorFondo,
+                            color_texto: colorTexto,
+                            id_ejecutivo: miIdEjecutivo
+                        });
+                        
+                        $('#modalColorCelda').modal('hide');
+                        mostrarBadgeWebSocket('success', 'Color guardado correctamente');
+                    } else {
+                        alert('Error al guardar color: ' + response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    alert('Error de conexión al guardar color: ' + error);
+                }
+            });
+        }
+        
+        function aplicarColorCelda(fila, columna, colorFondo, colorTexto) {
+            var claveCelda = fila + ',' + columna;
+            
+            // Almacenar el color en memoria
+            coloresCeldas[claveCelda] = {
+                fondo: colorFondo,
+                texto: colorTexto
+            };
+            
+            // Guardar en cache
+            guardarColoresEnCache();
+            
+            console.log('🎨 Color aplicado en memoria:', claveCelda, colorFondo, colorTexto);
+            
+            // Forzar re-renderizado de la celda específica
+            setTimeout(function() {
+                hot.render();
+            }, 10);
+        }
+        
+        function cargarColoresCeldas() {
+            console.log('🎨 Cargando colores de celdas...');
+            
+            // NO limpiar colores existentes - mantener cache
+            // coloresCeldas = {};
+            
+            // Cargar colores para todas las citas visibles
+            var data = hot.getData();
+            var idCitIndex = obtenerIndiceColumna('id_cit');
+            
+            if (idCitIndex === -1) {
+                console.log('⚠️ No se encontró columna id_cit');
+                return;
+            }
+            
+            var citasConColores = [];
+            
+            data.forEach(function(fila, filaIndex) {
+                var idCit = fila[idCitIndex];
+                if (idCit && idCit !== '' && citasConColores.indexOf(idCit) === -1) {
+                    citasConColores.push(idCit);
+                }
+            });
+            
+            console.log('📋 Citas con posibles colores:', citasConColores);
+            
+            if (citasConColores.length === 0) {
+                console.log('ℹ️ No hay citas para cargar colores');
+                // Aún así, forzar renderizado para aplicar colores del cache
+                hot.render();
+                return;
+            }
+            
+            var coloresCargados = 0;
+            var totalCitas = citasConColores.length;
+            
+            // Cargar colores para cada cita
+            citasConColores.forEach(function(idCit) {
+                $.ajax({
+                    url: 'server/controlador_citas.php',
+                    type: 'POST',
+                    data: {
+                        action: 'obtener_colores',
+                        id_cit: idCit
+                    },
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.success) {
+                            response.data.forEach(function(color) {
+                                aplicarColorCelda(
+                                    parseInt(color.fila_color), 
+                                    parseInt(color.columna_color), 
+                                    color.color_fondo, 
+                                    color.color_texto
+                                );
+                                console.log('✅ Color aplicado:', color.fila_color, color.columna_color, color.color_fondo);
+                            });
+                        }
+                        
+                        coloresCargados++;
+                        if (coloresCargados === totalCitas) {
+                            console.log('🎉 Todos los colores cargados, forzando re-renderizado');
+                            hot.render();
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('❌ Error al cargar colores para cita', idCit, ':', error);
+                        coloresCargados++;
+                        if (coloresCargados === totalCitas) {
+                            console.log('🎉 Carga completada (con errores), forzando re-renderizado');
+                            hot.render();
+                        }
+                    }
+                });
+            });
+        }
+        
+        function procesarColorWebSocket(mensaje) {
+            if (!mensaje.id_cit || !mensaje.fila || !mensaje.columna) {
+                return;
+            }
+            
+            log('🎨 Procesando color WebSocket: ' + JSON.stringify(mensaje));
+            
+            if (mensaje.tipo === 'color_cambiado') {
+                // Aplicar el nuevo color
+                aplicarColorCelda(mensaje.fila, mensaje.columna, mensaje.color_fondo, mensaje.color_texto);
+                
+                // Aplicar feedback visual
+                var celda = hot.getCell(mensaje.fila, mensaje.columna);
+                if (celda) {
+                    celda.classList.add('color-websocket-changed');
+                    setTimeout(function() {
+                        celda.classList.remove('color-websocket-changed');
+                    }, 1000);
+                }
+                
+                mostrarBadgeWebSocket('info', 'Color cambiado por otro usuario');
+            } else if (mensaje.tipo === 'color_eliminado') {
+                // Quitar el color del almacenamiento
+                var claveCelda = mensaje.fila + ',' + mensaje.columna;
+                delete coloresCeldas[claveCelda];
+                
+                // Actualizar cache
+                guardarColoresEnCache();
+                
+                // Forzar re-renderizado de la celda
+                hot.render();
+                
+                // Aplicar feedback visual
+                var celda = hot.getCell(mensaje.fila, mensaje.columna);
+                if (celda) {
+                    celda.classList.add('color-websocket-changed');
+                    setTimeout(function() {
+                        celda.classList.remove('color-websocket-changed');
+                    }, 1000);
+                }
+                
+                mostrarBadgeWebSocket('info', 'Color eliminado por otro usuario');
+            }
+        }
+        
+        function rgbToHex(rgb) {
+            if (!rgb || rgb === 'transparent' || rgb === 'rgba(0, 0, 0, 0)') return '#ffffff';
+            
+            var result = rgb.match(/\d+/g);
+            if (!result || result.length < 3) return '#ffffff';
+            
+            return '#' + 
+                ('0' + parseInt(result[0]).toString(16)).slice(-2) + 
+                ('0' + parseInt(result[1]).toString(16)).slice(-2) + 
+                ('0' + parseInt(result[2]).toString(16)).slice(-2);
         }
     </script>
 </body>

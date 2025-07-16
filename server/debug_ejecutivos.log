@@ -5828,3 +5828,129 @@ l
 
 [2025-07-16 19:41:55] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
 [2025-07-16 19:41:55] Planteles encontrados: 3
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 20:35:11] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 20:35:11] Planteles encontrados: 3
+[2025-07-16 20:35:55] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 20:35:55] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 20:35:55] Planteles encontrados: 3
+[2025-07-16 20:36:25] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 20:36:25] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 20:36:25] Planteles encontrados: 3
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 20:36:26] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 20:36:26] Planteles encontrados: 3
+[2025-07-16 20:53:44] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 20:53:44] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 20:53:44] Planteles encontrados: 3
+[2025-07-16 20:58:28] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 20:58:28] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 20:58:28] Planteles encontrados: 3
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 20:58:55] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 20:58:55] Planteles encontrados: 3
+[2025-07-16 21:48:19] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 21:48:19] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 21:48:19] Planteles encontrados: 3
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 21:53:24] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 21:53:24] Planteles encontrados: 3
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 21:53:25] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 21:53:25] Planteles encontrados: 3
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 21:55:41] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 21:55:41] Planteles encontrados: 3
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 21:55:42] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 21:55:42] Planteles encontrados: 3
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 21:58:45] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 21:58:45] Planteles encontrados: 3
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 21:58:46] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 21:58:46] Planteles encontrados: 3
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 21:59:14] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 21:59:14] Planteles encontrados: 3
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 21:59:15] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 21:59:15] Planteles encontrados: 3
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 22:00:46] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 22:00:46] Planteles encontrados: 3
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_planteles
+)
+
+[2025-07-16 22:00:47] Query planteles: SELECT id_pla, nom_pla, fec_pla FROM plantel ORDER BY nom_pla ASC
+[2025-07-16 22:00:47] Planteles encontrados: 3

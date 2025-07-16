@@ -4914,3 +4914,7949 @@ _cit >= '2025-07-07' AND c.cit_cit <= '2025-07-14'
     [id_ejecutivo] => 2
 )
 
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 20:35:11] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 20:35:11] - fecha_inicio: 2025-07-09
+[2025-07-16 20:35:11] - fecha_fin: 2025-07-16
+[2025-07-16 20:35:11] - id_ejecutivo: null
+[2025-07-16 20:35:11] - id_plantel: null
+[2025-07-16 20:35:11] - incluir_planteles_asociados RAW: not set
+[2025-07-16 20:35:11] - incluir_planteles_asociados FINAL: false
+[2025-07-16 20:35:11] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 20:35:11] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 20:35:11] - Citas encontradas: 74
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 20:35:11] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 20:35:48] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 148
+    [fila] => 2
+    [columna] => 4
+    [color_fondo] => #9c27b0
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 1
+)
+
+[2025-07-16 20:35:55] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 20:35:55] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 20:35:55] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 20:35:55] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 20:35:55] - fecha_inicio: 2025-07-09
+[2025-07-16 20:35:55] - fecha_fin: 2025-07-16
+[2025-07-16 20:35:55] - id_ejecutivo: null
+[2025-07-16 20:35:55] - id_plantel: null
+[2025-07-16 20:35:55] - incluir_planteles_asociados RAW: not set
+[2025-07-16 20:35:55] - incluir_planteles_asociados FINAL: false
+[2025-07-16 20:35:55] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 20:35:55] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 20:35:55] - Citas encontradas: 74
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 20:35:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 20:36:20] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 148
+    [fila] => 2
+    [columna] => 4
+    [color_fondo] => #ff9800
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 1
+)
+
+[2025-07-16 20:36:25] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 20:36:25] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 20:36:25] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 20:36:25] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 20:36:25] - fecha_inicio: 2025-07-09
+[2025-07-16 20:36:25] - fecha_fin: 2025-07-16
+[2025-07-16 20:36:25] - id_ejecutivo: null
+[2025-07-16 20:36:25] - id_plantel: null
+[2025-07-16 20:36:25] - incluir_planteles_asociados RAW: not set
+[2025-07-16 20:36:25] - incluir_planteles_asociados FINAL: false
+[2025-07-16 20:36:25] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 20:36:25] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 20:36:25] - Citas encontradas: 74
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 20:36:26] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 20:36:26] - fecha_inicio: 2025-07-09
+[2025-07-16 20:36:26] - fecha_fin: 2025-07-16
+[2025-07-16 20:36:26] - id_ejecutivo: null
+[2025-07-16 20:36:26] - id_plantel: null
+[2025-07-16 20:36:26] - incluir_planteles_asociados RAW: not set
+[2025-07-16 20:36:26] - incluir_planteles_asociados FINAL: false
+[2025-07-16 20:36:26] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 20:36:26] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 20:36:26] - Citas encontradas: 74
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 20:36:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 20:36:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 20:37:18] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 198
+    [fila] => 7
+    [columna] => 4
+    [color_fondo] => #2196f3
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 2
+)
+
+[2025-07-16 20:53:44] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 20:53:44] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 20:53:44] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 20:53:44] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 20:53:44] - fecha_inicio: 2025-07-09
+[2025-07-16 20:53:44] - fecha_fin: 2025-07-16
+[2025-07-16 20:53:44] - id_ejecutivo: null
+[2025-07-16 20:53:44] - id_plantel: null
+[2025-07-16 20:53:44] - incluir_planteles_asociados RAW: not set
+[2025-07-16 20:53:44] - incluir_planteles_asociados FINAL: false
+[2025-07-16 20:53:44] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 20:53:44] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 20:53:44] - Citas encontradas: 74
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 204
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 168
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 211
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 191
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 164
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 20:53:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 20:58:28] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 20:58:28] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 20:58:28] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 20:58:28] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 20:58:28] - fecha_inicio: 2025-07-09
+[2025-07-16 20:58:28] - fecha_fin: 2025-07-16
+[2025-07-16 20:58:28] - id_ejecutivo: null
+[2025-07-16 20:58:28] - id_plantel: null
+[2025-07-16 20:58:28] - incluir_planteles_asociados RAW: not set
+[2025-07-16 20:58:28] - incluir_planteles_asociados FINAL: false
+[2025-07-16 20:58:28] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 20:58:28] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 20:58:28] - Citas encontradas: 74
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 168
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 188
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 211
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 191
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 20:58:29] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 20:58:41] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 180
+    [fila] => 11
+    [columna] => 4
+    [color_fondo] => #f44336
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 1
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 20:58:55] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 20:58:55] - fecha_inicio: 2025-07-09
+[2025-07-16 20:58:55] - fecha_fin: 2025-07-16
+[2025-07-16 20:58:55] - id_ejecutivo: null
+[2025-07-16 20:58:55] - id_plantel: null
+[2025-07-16 20:58:55] - incluir_planteles_asociados RAW: not set
+[2025-07-16 20:58:55] - incluir_planteles_asociados FINAL: false
+[2025-07-16 20:58:55] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 20:58:55] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 20:58:55] - Citas encontradas: 74
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 168
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 204
+)
+
+[2025-07-16 20:58:55] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 188
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 211
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 191
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 20:58:56] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 20:59:20] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 159
+    [fila] => 16
+    [columna] => 4
+    [color_fondo] => #ffeb3b
+    [color_texto] => #000000
+    [id_ejecutivo] => 2
+)
+
+[2025-07-16 21:03:46] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 208
+    [fila] => 18
+    [columna] => 4
+    [color_fondo] => #2196f3
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 2
+)
+
+[2025-07-16 21:03:52] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 208
+    [fila] => 18
+    [columna] => 5
+    [color_fondo] => #ff9800
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 2
+)
+
+[2025-07-16 21:48:19] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 21:48:19] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 21:48:19] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 21:48:19] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 21:48:19] - fecha_inicio: 2025-07-09
+[2025-07-16 21:48:19] - fecha_fin: 2025-07-16
+[2025-07-16 21:48:19] - id_ejecutivo: null
+[2025-07-16 21:48:19] - id_plantel: null
+[2025-07-16 21:48:19] - incluir_planteles_asociados RAW: not set
+[2025-07-16 21:48:19] - incluir_planteles_asociados FINAL: false
+[2025-07-16 21:48:19] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 21:48:19] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 21:48:19] - Citas encontradas: 74
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 204
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 168
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 188
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 211
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 164
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 21:48:20] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 21:53:24] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 21:53:24] - fecha_inicio: 2025-07-09
+[2025-07-16 21:53:24] - fecha_fin: 2025-07-16
+[2025-07-16 21:53:24] - id_ejecutivo: null
+[2025-07-16 21:53:24] - id_plantel: null
+[2025-07-16 21:53:24] - incluir_planteles_asociados RAW: not set
+[2025-07-16 21:53:24] - incluir_planteles_asociados FINAL: false
+[2025-07-16 21:53:24] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 21:53:24] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 21:53:24] - Citas encontradas: 74
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 188
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 191
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 164
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 21:53:24] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 21:53:25] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 21:53:25] - fecha_inicio: 2025-07-09
+[2025-07-16 21:53:25] - fecha_fin: 2025-07-16
+[2025-07-16 21:53:25] - id_ejecutivo: null
+[2025-07-16 21:53:25] - id_plantel: null
+[2025-07-16 21:53:25] - incluir_planteles_asociados RAW: not set
+[2025-07-16 21:53:25] - incluir_planteles_asociados FINAL: false
+[2025-07-16 21:53:25] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 21:53:25] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 21:53:25] - Citas encontradas: 74
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 21:53:25] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 204
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 188
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 211
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 191
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 164
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 21:53:26] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 21:53:36] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 21:53:51] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 21:53:51] REQUEST recibido: Array
+(
+    [action] => eliminar_color
+    [id_color] => 3
+)
+
+[2025-07-16 21:54:07] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 168
+    [fila] => 12
+    [columna] => 4
+    [color_fondo] => #d5e0f0
+    [color_texto] => #cd1818
+    [id_ejecutivo] => 1
+)
+
+[2025-07-16 21:54:18] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 144
+    [fila] => 14
+    [columna] => 4
+    [color_fondo] => #9c27b0
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 2
+)
+
+[2025-07-16 21:54:22] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 168
+    [fila] => 12
+    [columna] => 4
+    [color_fondo] => #ff9800
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 1
+)
+
+[2025-07-16 21:54:30] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 159
+    [fila] => 16
+    [columna] => 2
+    [color_fondo] => #f44336
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 2
+)
+
+[2025-07-16 21:54:51] REQUEST recibido: Array
+(
+    [action] => guardar_comentario
+    [id_cit] => 143
+    [fila] => 4
+    [columna] => 4
+    [contenido] => comentario en nombre
+    [id_ejecutivo] => 1
+)
+
+[2025-07-16 21:55:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 21:55:24] REQUEST recibido: Array
+(
+    [action] => guardar_comentario
+    [id_cit] => 143
+    [fila] => 4
+    [columna] => 3
+    [contenido] => comentario en hora
+    [id_ejecutivo] => 1
+)
+
+[2025-07-16 21:55:28] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 21:55:34] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 21:55:41] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 21:55:41] - fecha_inicio: 2025-07-09
+[2025-07-16 21:55:41] - fecha_fin: 2025-07-16
+[2025-07-16 21:55:41] - id_ejecutivo: null
+[2025-07-16 21:55:41] - id_plantel: null
+[2025-07-16 21:55:41] - incluir_planteles_asociados RAW: not set
+[2025-07-16 21:55:41] - incluir_planteles_asociados FINAL: false
+[2025-07-16 21:55:41] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 21:55:41] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 21:55:41] - Citas encontradas: 74
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 168
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 204
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 188
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 211
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 191
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 164
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 21:55:41] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 21:55:41] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 21:55:41] - fecha_inicio: 2025-07-09
+[2025-07-16 21:55:41] - fecha_fin: 2025-07-16
+[2025-07-16 21:55:41] - id_ejecutivo: null
+[2025-07-16 21:55:41] - id_plantel: null
+[2025-07-16 21:55:41] - incluir_planteles_asociados RAW: not set
+[2025-07-16 21:55:41] - incluir_planteles_asociados FINAL: false
+[2025-07-16 21:55:41] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 21:55:41] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 21:55:41] - Citas encontradas: 74
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 21:55:42] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 21:55:42] - fecha_inicio: 2025-07-09
+[2025-07-16 21:55:42] - fecha_fin: 2025-07-16
+[2025-07-16 21:55:42] - id_ejecutivo: null
+[2025-07-16 21:55:42] - id_plantel: null
+[2025-07-16 21:55:42] - incluir_planteles_asociados RAW: not set
+[2025-07-16 21:55:42] - incluir_planteles_asociados FINAL: false
+[2025-07-16 21:55:42] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 21:55:42] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 21:55:42] - Citas encontradas: 74
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 168
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 204
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 211
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 191
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 164
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 21:55:42] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 21:55:43] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 21:58:45] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 21:58:45] - fecha_inicio: 2025-07-09
+[2025-07-16 21:58:45] - fecha_fin: 2025-07-16
+[2025-07-16 21:58:45] - id_ejecutivo: null
+[2025-07-16 21:58:45] - id_plantel: null
+[2025-07-16 21:58:45] - incluir_planteles_asociados RAW: not set
+[2025-07-16 21:58:45] - incluir_planteles_asociados FINAL: false
+[2025-07-16 21:58:45] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 21:58:45] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 21:58:45] - Citas encontradas: 74
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 168
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 204
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 188
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 211
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 191
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 164
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 21:58:45] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 21:58:46] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 21:58:46] - fecha_inicio: 2025-07-09
+[2025-07-16 21:58:46] - fecha_fin: 2025-07-16
+[2025-07-16 21:58:46] - id_ejecutivo: null
+[2025-07-16 21:58:46] - id_plantel: null
+[2025-07-16 21:58:46] - incluir_planteles_asociados RAW: not set
+[2025-07-16 21:58:46] - incluir_planteles_asociados FINAL: false
+[2025-07-16 21:58:46] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 21:58:46] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 21:58:46] - Citas encontradas: 74
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 204
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 168
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 188
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 211
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 191
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 164
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 21:58:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 21:58:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 21:59:14] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 21:59:14] - fecha_inicio: 2025-07-09
+[2025-07-16 21:59:14] - fecha_fin: 2025-07-16
+[2025-07-16 21:59:14] - id_ejecutivo: null
+[2025-07-16 21:59:14] - id_plantel: null
+[2025-07-16 21:59:14] - incluir_planteles_asociados RAW: not set
+[2025-07-16 21:59:14] - incluir_planteles_asociados FINAL: false
+[2025-07-16 21:59:14] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 21:59:14] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 21:59:14] - Citas encontradas: 74
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 21:59:14] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 168
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 204
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 188
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 164
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 21:59:15] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 21:59:15] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 21:59:15] - fecha_inicio: 2025-07-09
+[2025-07-16 21:59:15] - fecha_fin: 2025-07-16
+[2025-07-16 21:59:15] - id_ejecutivo: null
+[2025-07-16 21:59:15] - id_plantel: null
+[2025-07-16 21:59:15] - incluir_planteles_asociados RAW: not set
+[2025-07-16 21:59:15] - incluir_planteles_asociados FINAL: false
+[2025-07-16 21:59:15] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 21:59:15] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 21:59:15] - Citas encontradas: 74
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 168
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 204
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 188
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 211
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 191
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 164
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 21:59:16] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 21:59:53] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 163
+    [fila] => 0
+    [columna] => 4
+    [color_fondo] => #2196f3
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 1
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 22:00:46] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 22:00:46] - fecha_inicio: 2025-07-09
+[2025-07-16 22:00:46] - fecha_fin: 2025-07-16
+[2025-07-16 22:00:46] - id_ejecutivo: null
+[2025-07-16 22:00:46] - id_plantel: null
+[2025-07-16 22:00:46] - incluir_planteles_asociados RAW: not set
+[2025-07-16 22:00:46] - incluir_planteles_asociados FINAL: false
+[2025-07-16 22:00:46] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 22:00:46] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 22:00:46] - Citas encontradas: 74
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 168
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 188
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 204
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 211
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 191
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 164
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 22:00:46] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 176
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-09
+    [fecha_fin] => 2025-07-16
+)
+
+[2025-07-16 22:00:47] FILTRO CITAS - Parámetros recibidos:
+[2025-07-16 22:00:47] - fecha_inicio: 2025-07-09
+[2025-07-16 22:00:47] - fecha_fin: 2025-07-16
+[2025-07-16 22:00:47] - id_ejecutivo: null
+[2025-07-16 22:00:47] - id_plantel: null
+[2025-07-16 22:00:47] - incluir_planteles_asociados RAW: not set
+[2025-07-16 22:00:47] - incluir_planteles_asociados FINAL: false
+[2025-07-16 22:00:47] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+[2025-07-16 22:00:47] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-09' AND c.cit_cit <= '2025-07-16'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-16 22:00:47] - Citas encontradas: 74
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 163
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 203
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 148
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 143
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 183
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 178
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 158
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 198
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 153
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 193
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 173
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 180
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 168
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 204
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 144
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 188
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 159
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 184
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 211
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 194
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 149
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 174
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 191
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 179
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 199
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 154
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 145
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 164
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 189
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 176
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 151
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 169
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 209
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 146
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 156
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 206
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 186
+)
+
+[2025-07-16 22:00:47] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 181
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 163
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 203
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 148
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 183
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 143
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 178
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 158
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 198
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 193
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 153
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 173
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 180
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 168
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 204
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 144
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 188
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 159
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 184
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 211
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 208
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 149
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 194
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 191
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 179
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 199
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 145
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 164
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 189
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 151
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 209
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 169
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 146
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 186
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 156
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 206
+)
+
+[2025-07-16 22:00:48] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 181
+)
+
+[2025-07-16 22:01:14] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 174
+    [fila] => 22
+    [columna] => 4
+    [color_fondo] => #ffeb3b
+    [color_texto] => #000000
+    [id_ejecutivo] => 1
+)
+
+[2025-07-16 22:01:24] REQUEST recibido: Array
+(
+    [action] => guardar_comentario
+    [id_cit] => 174
+    [fila] => 22
+    [columna] => 4
+    [contenido] => nuevo comentario en el nombre
+    [id_ejecutivo] => 1
+)
+
+[2025-07-16 22:01:27] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 22:01:36] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 174
+    [fila] => 22
+    [columna] => 3
+    [color_fondo] => #f44336
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 4
+)
+
+[2025-07-16 22:01:48] REQUEST recibido: Array
+(
+    [action] => guardar_comentario
+    [id_cit] => 174
+    [fila] => 22
+    [columna] => 3
+    [contenido] => nuevo comentario en la hora
+    [id_ejecutivo] => 4
+)
+
+[2025-07-16 22:01:54] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 22:02:18] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 154
+    [fila] => 26
+    [columna] => 4
+    [color_fondo] => #050505
+    [color_texto] => #67fb04
+    [id_ejecutivo] => 1
+)
+
+[2025-07-16 22:02:23] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 154
+    [fila] => 26
+    [columna] => 5
+    [color_fondo] => #4caf50
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 4
+)
+
+[2025-07-16 22:02:30] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 154
+)
+
+[2025-07-16 22:02:34] REQUEST recibido: Array
+(
+    [action] => obtener_comentarios
+    [id_cit] => 174
+)
+
+[2025-07-16 22:02:39] REQUEST recibido: Array
+(
+    [action] => obtener_colores
+    [id_cit] => 208
+)
+
+[2025-07-16 22:02:39] REQUEST recibido: Array
+(
+    [action] => eliminar_color
+    [id_color] => 6
+)
+
+[2025-07-16 22:02:46] REQUEST recibido: Array
+(
+    [action] => guardar_color
+    [id_cit] => 176
+    [fila] => 30
+    [columna] => 3
+    [color_fondo] => #2196f3
+    [color_texto] => #ffffff
+    [id_ejecutivo] => 4
+)
+
