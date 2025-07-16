@@ -1,29 +1,22 @@
-✅ *p20 - Adicionar comentarios en celdas - COMPLETADO*  
-Referencia: https://handsontable.com/docs/javascript-data-grid/comments/
-
-✅ En el contextMenu de la Handsontable de citas se implementó la opción de agregar comentarios en cualquier celda de las filas que tengan datos así como el mysql necesario 💬.
-
-✅ *Funcionalidad WebSocket - COMPLETADO:*
-Funciona con websockets para que cuando un ejecutivo agregue, edite o elimine un comentario, éste se refleje en tiempo real para todos los demás ejecutivos conectados con el elemento cambiado pintado y ligeramente desvanecido para ilustrar el cambio efectuado ✨.
-
-🔧 **Archivos modificados:**
-- ✅ `server/controlador_citas.php` - Endpoints para comentarios
-- ✅ `index.php` - UI y funcionalidad frontend
-- ✅ Base de datos - Tabla `comentarios_cita` creada
-- ✅ `test_comentarios.html` - Archivo de pruebas
-- ✅ `COMENTARIOS_README.md` - Documentación completa
-
-🎯 **Funcionalidades implementadas:**
-- ✅ Context menu con opciones "Agregar comentario" y "Ver comentarios"
-- ✅ Modales para crear y visualizar comentarios
-- ✅ Indicadores visuales (triángulo naranja) en celdas con comentarios
-- ✅ Sincronización WebSocket en tiempo real
-- ✅ Animaciones de feedback para cambios remotos
-- ✅ Almacenamiento completo en MySQL
-- ✅ Validación y manejo de errores - Adicionar comentarios en celdas*  
+📌 *p20 - Adicionar comentarios en celdas*  
 Referencia: https://handsontable.com/docs/javascript-data-grid/comments/
 
 En el contextMenu de la Handsontable de citas se debe permitir la opción de agregar comentarios en cualquier celda de las filas que tengan datos así como el mysql necesario 💬.
 
 *Funcionalidad WebSocket:*
 Debe operar con los websockets para que cuando un ejecutivo agregue, edite o elimine un comentario, éste se refleje en tiempo real para todos los demás ejecutivos conectados con el elemento cambiado pintado y ligeramente desvanecido para ilustrar el cambio efectuado ✨.
+
+--------------------------------
+
+📌 *p21 - Colores de celdas*  
+Referencia: https://handsontable.com/docs/javascript-data-grid/formatting-cells/
+
+En el contextMenu de la Handsontable de citas se debe permitir la opción de pintar cualquier celda de filas que tengan datos, así como el mysql necesario 🎨.
+
+*Funcionalidad WebSocket:*
+Debe operar con los websockets para que cuando un ejecutivo cambie el color de una celda, éste se refleje en tiempo real para todos los demás ejecutivos conectados con el elemento cambiado pintado y ligeramente desvanecido para ilustrar el cambio efectuado ✨.
+
+*Consideraciones técnicas:*
+- Ambas funcionalidades deben integrarse al contextMenu existente
+- Sincronización en tiempo real vía WebSocket
+- Persistencia en base de datos para mantener estado entre sesiones 🔄
